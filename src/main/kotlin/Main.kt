@@ -41,7 +41,7 @@ private fun getRetrofit(): Retrofit {
     val okHttpClient = OkHttpClient.Builder().apply {
         readTimeout(60, TimeUnit.SECONDS)
         connectTimeout(60, TimeUnit.SECONDS)
-        addInterceptor(loggingInterceptor)
+        //addInterceptor(loggingInterceptor)
     }.build()
 
     val builder = Retrofit.Builder().apply {
